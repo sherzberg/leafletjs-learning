@@ -34,6 +34,17 @@
 		console.log(e.latlng);
 	});
 
+	var geojsonFeature = {
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-93.1, 41.6] 
+		},
+		"properties": {
+			"name": "Zoom Carwash"
+		}
+	};
+	L.geoJson(geojsonFeature).addTo(map);
 </script>
 
 </body>
